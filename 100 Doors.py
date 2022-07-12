@@ -13,14 +13,8 @@ def get_final_opened_doors(num_doors):
             count2 += count
         count += 1
 
-    count = 1
-    open_doors = []
-    for door in doors:
-        if door:
-            open_doors.append(count)
-        count += 1
-  
+    open_doors = [(x[0] + 1) for x in enumerate(doors) if x[1] is True]
     return open_doors
-    
+
 
 print(get_final_opened_doors(100))
