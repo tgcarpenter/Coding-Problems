@@ -19,8 +19,8 @@ def get_final_opened_doors(num_doors):
         if door:
             open_doors.append(count)
         count += 1
-    print(open_doors)
+  
     return open_doors
     
 
-get_final_opened_doors(100)
+print(get_final_opened_doors(100))
